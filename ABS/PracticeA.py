@@ -1,3 +1,4 @@
+# 入力は 1行目に[数値], 2行目に[数値1 数値2], 3行目に[文字列]
 line_1 = input()
 tmp_str = input()
 line_2 = tmp_str.split()
