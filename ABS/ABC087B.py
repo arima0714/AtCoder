@@ -1,7 +1,11 @@
-num500 = int(input())
-num100 = int(input())
-num50  = int(input())
-num_sum= int(input())
+# num500 = int(input())
+# num100 = int(input())
+# num50  = int(input())
+# num_sum= int(input())
+
+num500 = 10
+num100 = 9
+num50  = 8
 
 # if num500 != 0:
 #     num500 = num500+1
@@ -23,20 +27,28 @@ j = 0
 k = 0
 while True:
     if i <= num500:
+        print(i)
+
         while True:
-            if j <= num100:
+            if j <= num500:
+                print(j)
+
                 while True:
-                    if k <= num50:
-                        if 500 * i + 100 * j + 50 * k == num_sum:
-                            answer = answer + 1
+                    if k <= num500:
+                        print(k)
+
+
+
                         k = k + 1
                     else:
                         break
+
                 j = j + 1
             else:
                 break
+
         i = i + 1
     else:
         break
 
-print(answer)
+# print(answer)
