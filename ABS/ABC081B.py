@@ -12,6 +12,3 @@ while True:
     break
 
 print(counter-1)
-
-print(input_num)
-print(input_line)
