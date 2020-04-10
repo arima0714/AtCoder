@@ -18,4 +18,4 @@ while True:
             counter = counter + 1
             continue
 
-print(counter)
+print(counter-1)
