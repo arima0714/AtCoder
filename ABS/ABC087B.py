@@ -1,3 +1,5 @@
+# 4行あり、各行数値が一つずつ入力される
+
 num500 = int(input())+1
 num100 = int(input())+1
 num50  = int(input())+1
