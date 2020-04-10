@@ -7,12 +7,15 @@ loop = True
 
 while True:
     for k in input_line:
-        if k % (2 ** counter) == False:
+        if (k % (2 ** counter)) != 0:
             loop = False
             break
         elif loop == True:
             continue
     if loop == False:
         break
+    elif loop == True:
+            counter = counter + 1
+            continue
 
 print(counter)
