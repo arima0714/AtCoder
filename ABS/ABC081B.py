@@ -10,7 +10,9 @@ while True:
         if k % (2 ** counter) == False:
             loop = False
             break
+        elif loop == True:
+            continue
+    if loop == False:
         break
-    break
 
 print(counter)
