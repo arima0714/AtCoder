@@ -9,7 +9,6 @@ for i in range(int(input_line[0]) + 1) :
     for j in list(str(i)):
         tmp = tmp + int(j)
     if int(input_line[1]) <=  tmp <= int(input_line[2]) :
-        print("tmp = ", i)
         answer = answer + i
         
 print(answer)
