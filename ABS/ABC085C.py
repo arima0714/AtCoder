@@ -7,4 +7,10 @@ x = -1
 y = -1
 z = -1
 
-print(input_line)
+tmp = input_line[1]
+
+x, tmp = divmod(tmp, 10000)
+y, tmp = divmod(tmp, 5000)
+z, tmp = divmod(tmp, 1000)
+
+print(str(x) +" "+ str(y) +" "+ str(z))
