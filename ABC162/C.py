@@ -23,7 +23,7 @@ for i in range(input_num):
             tmp_list[0] = i
             tmp_list[1] = j
             tmp_list[2] = k
-            tmp_list.sort
+            tmp_list.sort()
             tmp_str = str(tmp_list)
             if(memory.get(tmp_str) == None):
                 memory[tmp_str] = gcd(i,j,k)
