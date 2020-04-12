@@ -9,11 +9,11 @@ x = -1
 y = -1
 z = -1
 
-for i in range(input_line[0]):
-    for j in range(input_line[0]):
+for i in range(input_line[0]+1):
+    for j in range(input_line[0]+1):
         k = input_line[0] - i -j
         if( k < 0):
-            continue
+            break
         elif(input_line[1] == 10000 * i + 5000 * j + 1000 * k and i + j + k == input_line[0]):
             loop = False
             x = i
