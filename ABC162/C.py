@@ -8,6 +8,10 @@ def gcd(*numbers):
 import math
 from functools import reduce
 
+memory = {}
+tmp_str = ""
+tmp_list = [0, 0, 0]
+
 sum = 0
 
 for i in range(input_num):
@@ -16,7 +20,13 @@ for i in range(input_num):
         j = j+1
         for k in range(input_num):
             k = k+1
-#            print("i = "+str(i)+" j = "+str(j)+" k = "+str(k)+" gcd() = "+str(gcd(i,j,k)))
-            sum = sum + gcd(i, j, k)
+            tmp_list[0] = i
+            tmp_list[1] = j
+            tmp_list[2] = k
+            tmp_list.sort
+            tmp_str = str(tmp_list)
+            if(memory.get(tmp_str) == None):
+                memory[tmp_str] = gcd(i,j,k)
+            sum = sum + memory[tmp_str]
 
 print(sum)
