@@ -5,11 +5,21 @@ input_line = [int(s) for s in input_line]
 
 loop = True
 
+x = -1
+y = -1
+z = -1
+
 for i in range(input_line[0]):
     for j in range(input_line[0]):
         k = input_line[0] - i -j
-        if(input_line[1] == 10000 * i + 5000 * j + 1000 * k and i + j + k == input_line[0]):
-            print(str(i) +" "+ str(j) +" "+ str(k))
+        if( k < 0):
+            continue
+        elif(input_line[1] == 10000 * i + 5000 * j + 1000 * k and i + j + k == input_line[0]):
             loop = False
+            x = i
+            y = j
+            z = k
     if (loop == False):
         break
+
+print(str(x) +" "+ str(y) +" "+ str(z))
