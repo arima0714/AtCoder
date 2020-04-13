@@ -1,22 +1,12 @@
-# 入力は二行でそれぞれ[数値]
+N = int(input())
+S = input()
 
-input_nums = int(input())
-input_line = input()
+ans = S.count("R")*S.count("G")*S.count("B")
 
-result = 0
+for i in range(N-2):
+    for j in range(i+1, N-1):
+        k = j-i + j
+        if k < N and S[i] != S[j] and S[j] != S[k] and S[i] != S[k]:
+            ans -= 1
 
-for k in range(input_nums):
-    for j in range(k):
-        for i in range(j):
-            if(j-i == k-j):
-                pass
-            elif(input_line[i] == input_line[j]):
-                pass
-            elif(input_line[i] == input_line[k]):
-                pass
-            elif(input_line[j] == input_line[k]):
-                pass
-            else:
-                result = result + 1
-
-print(result)
+print(ans)
