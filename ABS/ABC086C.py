@@ -1,3 +1,6 @@
+# 一行目は[数値]
+# 二行目以降は[数値1 数値2 数値3]で、一行目の[数値]回分ループする
+
 N = int(input())
 
 inputs = []
@@ -14,10 +17,8 @@ for i in range(N):
     y = input_line[2]
     inputs.append(input_line)
     if ( t < x + y):
-        print("No -> t < x + y")
         answer = "No"
     elif ( (x+y)%2 != t%2):
-        print("No -> (x+y)%2 != t%2")
         answer = "No"
     else:
         pass    # YES
