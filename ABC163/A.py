@@ -1,4 +1,5 @@
-import numpy as np
-R = int(input())
+r = int(input())
 
-print(2*R*np.pi)
+answer = 3.141592653589793 * 2 * r
+
+print(answer)
