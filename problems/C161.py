@@ -5,12 +5,11 @@ K = int(il[1])
 old = N
 new = 0
 
-while True:
-    new = abs(old - K)
-    print("old = " + str(old) + " new = " + str(new))
-    if(old > new):
-        old = new
-    else:
-        break
+a = N // K
+b = N % K
+c = abs(N - (K * (a+1)))
 
-print(old)
+if (b > c):
+    print(c)
+else:
+    print(b)
