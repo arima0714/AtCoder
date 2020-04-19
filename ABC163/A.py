@@ -1,4 +1,4 @@
-import math
-R = (int(input()))
+import numpy as np
+R = int(input())
 
-print(2*R*math.pi)
+print(2*R*np.pi)
