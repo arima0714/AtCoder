@@ -16,3 +16,18 @@ for k in range(K, N+1):
 
 print(answer)
 print(list)
+
+def return_number(max, min):
+    return max-min+1
+
+def return_max(n, k):
+    ans = 0
+    for i in range(k):
+        ans = ans + n - k
+    return ans
+
+def return_min(n, k):
+    ans = 0
+    for i in range(k):
+        ans = ans + k
+    return ans
