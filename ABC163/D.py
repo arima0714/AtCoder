@@ -8,11 +8,10 @@ N = int(il1[0])
 K = int(il1[1])
 
 answer = 0
-min_ = 0
-max_ = 0
+mod = 10**9 +7
 
 for k in range(K, N+2):
     num  = return_number(N, k)
     answer = answer + num
 
-print(answer)
+print(answer%mod)
