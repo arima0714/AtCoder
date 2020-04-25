@@ -4,9 +4,10 @@ M = int(input_line[1])
 
 import math
 
-print("N="+str(N)+" M="+str(M))
-
 def combination(n, r):
-    return math.factorial(n) / math.factorial(n-r) / math.factorial(r)
+    if(n == 1 or n == 0):
+        return 0
+    else:
+        return math.factorial(n) // math.factorial(n-r) // math.factorial(r)
 
-print(combination(N,M))
+print(combination(N,2) + combination(M,2))
