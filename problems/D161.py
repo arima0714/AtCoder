@@ -12,4 +12,15 @@ def check_runrun(number):
                 break
         return ans
 
-print(check_runrun(K))
+def return_result(input_k):
+    i = 0
+    tmp = 1
+    while tmp <= input_k:
+        i = i + 1
+        if (check_runrun(i)):
+            # print("tmp = "+str(tmp) + " i = " +str(i))
+            tmp = tmp + 1
+    return i
+
+
+print(return_result(K))
