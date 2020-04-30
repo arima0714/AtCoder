@@ -5,4 +5,14 @@ X.sort()
 X_min = X[0]
 X_max = X[N-1]
 
-print("x_min="+str(X_min)+" x_max="+str(X_max))
+result = -1
+total = 0
+for P in range(X_min, X_max+1):
+    for x in X:
+        total = total + (x-P)**2
+    if (total < result or result < 0):
+        result = total
+    elif (total > result):
+        break
+    total = 0
+print(result)
